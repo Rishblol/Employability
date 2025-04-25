@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RV University Resume Analyzer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="/" class="nav-logo">RVU Resume Analyzer</a>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/analyzer">Start Now</a></li>
+          <li><a href="/dashboard">Dashboard</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">{% block content %}{% endblock %}</div>
+
+    <footer>
+      <p>Made for RV University Students • © 2025</p>
+    </footer>
+  </body>
+</html>
